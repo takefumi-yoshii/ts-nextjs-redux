@@ -1,0 +1,36 @@
+{
+  "name": "ts-nextjs-redux",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier './components/**/*.tsx' './store/**/*.ts' --write"
+  },
+  "dependencies": {
+    "next": "^8.0.4",
+    "next-redux-wrapper": "^3.0.0-alpha.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.1",
+    "redux": "^4.0.1",
+    "styled-components": "^4.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.3",
+    "@types/next-redux-wrapper": "^2.0.2",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.3",
+    "@types/react-redux": "^7.0.6",
+    "@types/redux": "^3.6.0",
+    "@types/styled-components": "^4.1.14",
+    "@types/uuid": "^3.4.4",
+    "@zeit/next-typescript": "^1.1.1",
+    "prettier": "^1.16.4",
+    "redux-devtools-extension": "^2.13.8",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.3"
+  }
+}
