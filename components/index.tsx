@@ -1,5 +1,5 @@
 import React from 'react'
-import Next from 'next'
+import { NextComponentType, NextPageContext } from 'next'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { StoreState } from '../store'
@@ -11,7 +11,7 @@ type Props = {
 }
 // ______________________________________________________
 //
-const Component: Next.NextFC<Props> = props => (
+const Component: NextComponentType<NextPageContext, {}, Props> = props => (
   <div className={props.className}>Welcome to next.js!</div>
 )
 // ______________________________________________________

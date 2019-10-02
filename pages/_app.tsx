@@ -1,13 +1,18 @@
 import * as React from 'react'
 import { Provider } from 'react-redux'
-import App, { Container, NextAppContext } from 'next/app'
+import App, { Container, AppContext } from 'next/app'
 import withRedux from 'next-redux-wrapper'
-import { initStore } from '../store'
+import { initStore, ReduxStore } from '../store'
 // ______________________________________________________
 //
+
+type Props = {
+  store: ReduxStore
+}
+
 export default withRedux(initStore)(
-  class extends App {
-    static async getInitialProps({ Component, ctx }: NextAppContext) {
+  class extends App<Props> {
+    static async getInitialProps({ Component, ctx }: AppContext) {
       let pageProps = {}
       if (Component.getInitialProps) {
         pageProps = await Component.getInitialProps(ctx)
