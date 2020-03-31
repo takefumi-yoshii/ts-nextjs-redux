@@ -9,7 +9,7 @@
     "prettier": "prettier './components/**/*.tsx' './store/**/*.ts' --write"
   },
   "dependencies": {
-    "next": "^8.0.4",
+    "next": "^9.3.2",
     "next-redux-wrapper": "^3.0.0-alpha.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
