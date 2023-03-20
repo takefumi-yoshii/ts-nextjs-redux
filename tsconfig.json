@@ -6,7 +6,17 @@
     "noUnusedParameters": false,
     "strict": true,
     "esModuleInterop": true,
-    "jsx": "react"
+    "jsx": "preserve",
+    "lib": [
+      "es2015"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
   "include": [
     "types/**.*",
@@ -14,5 +24,8 @@
     "pages/**/*",
     "layouts/**/*",
     "components/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

@@ -1,13 +1,13 @@
 import * as React from 'react'
-import { Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document'
 // ______________________________________________________
 //
 export default () => (
-  <html>
+  <Html>
     <Head />
     <body>
       <Main />
       <NextScript />
     </body>
-  </html>
+  </Html>
 )

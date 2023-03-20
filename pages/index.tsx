@@ -1,29 +1,27 @@
-import React from 'react'
-import { NextContext } from 'next'
+import React from "react";
+import { NextPageContext } from "next"
 import Head from 'next/head'
-import Component from '../components/index'
-// ______________________________________________________
-//
+import Component from "../components/index";
+
 type Props = {
-  title: string
+    title: string
 }
-// ______________________________________________________
-//
-class App extends React.Component<Props> {
-  static async getInitialProps(ctx: NextContext): Promise<Props> {
-    return { title: 'Hello world' }
-  }
-  render() {
+
+const app = ({ title }: Props) => {
     return (
-      <>
-        <Head>
-          <title>{this.props.title}</title>
-        </Head>
-        <Component />
-      </>
+        <>
+            <Head>
+                <title>{title}</title>
+            </Head>
+            <Component />
+        </>
     )
-  }
 }
-// ______________________________________________________
-//
-export default App
+
+app.getInitialProps = async (ctx: NextPageContext): Promise<Props> => {
+    return {
+        title: 'Hello World!',
+    }
+}
+
+export default app
