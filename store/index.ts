@@ -1,12 +1,12 @@
-import { createStore, Store } from 'redux'
-import { composeWithDevTools } from 'redux-devtools-extension'
-import { initialState, reducer } from './reducer'
-// ______________________________________________________
-//
-export type StoreState = ReturnType<typeof initialState>
-export type ReduxStore = Store<StoreState>
-// ______________________________________________________
-//
-export function initStore(state = initialState()) {
-  return createStore(reducer, state, composeWithDevTools())
+import { configureStore } from '@reduxjs/toolkit';
+import { initialState, reducer } from './reducer';
+// import { composeWithDevTools } from 'redux-devtools-extension';
+
+export type StoreState = ReturnType<typeof initialState>;
+export type ReduxStoreInstance = ReturnType<typeof initStore>;
+
+export function initStore() {
+    return configureStore({
+        reducer
+    });
 }

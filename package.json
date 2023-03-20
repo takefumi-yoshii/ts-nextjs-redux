@@ -6,31 +6,33 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier './components/**/*.tsx' './store/**/*.ts' --write"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "next": "^8.0.4",
-    "next-redux-wrapper": "^3.0.0-alpha.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.0.1",
-    "redux": "^4.0.1",
-    "styled-components": "^4.2.0",
-    "uuid": "^3.3.2"
+    "@babel/core": "^7.21.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "next": "^13.2.1",
+    "next-redux-wrapper": "^8.1.0",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "styled-components": "^5.3.8",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/next": "^8.0.3",
-    "@types/next-redux-wrapper": "^2.0.2",
-    "@types/react": "^16.8.13",
-    "@types/react-dom": "^16.8.3",
-    "@types/react-redux": "^7.0.6",
+    "@types/next": "^9.0.0",
+    "@types/next-redux-wrapper": "^3.0.0",
+    "@types/node": "18.14.6",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "@types/redux": "^3.6.0",
-    "@types/styled-components": "^4.1.14",
-    "@types/uuid": "^3.4.4",
+    "@types/styled-components": "^5.1.26",
+    "@types/uuid": "^9.0.1",
     "@zeit/next-typescript": "^1.1.1",
-    "prettier": "^1.16.4",
-    "redux-devtools-extension": "^2.13.8",
-    "ts-node": "^8.0.3",
-    "typescript": "^3.4.3"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
   }
 }
